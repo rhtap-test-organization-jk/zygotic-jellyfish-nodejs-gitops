@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: zygotic-jellyfish-nodejs-gitops-repository
+spec:
+  url: https://github.com/rhtap-test-organization-jk/zygotic-jellyfish-nodejs-gitops

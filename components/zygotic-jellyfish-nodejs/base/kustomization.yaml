@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: zygotic-jellyfish-nodejs
+  janus-idp.io/tekton: zygotic-jellyfish-nodejs
+  backstage.io/kubernetes-id: zygotic-jellyfish-nodejs
+  backstage.io/kubernetes-namespace: rhtap-test-organization-jk 
+  app.kubernetes.io/part-of: zygotic-jellyfish-nodejs
+resources:
+- deployment.yaml
+- route.yaml
+- service.yaml
